@@ -5,6 +5,7 @@ import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
 import com.lxq18.learn.akka.messages.SetRequest;
+import com.lxq18.learn.akka.messages.Status;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,8 +21,11 @@ public class AkkaDb extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(SetRequest.class, message -> {
+                    Thread.sleep(3000);
+
                     log.info("received message = {}", message);
                     map.put(message.getKey(), message.getValue());
+                    sender().tell(new Status.Sucess(message.getKey()), self());
                 })
                 .matchAny(o -> log.info("received unknown message: {}", o))
                 .build();
