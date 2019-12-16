@@ -4,8 +4,8 @@ import akka.actor.AbstractActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
-import com.lxq18.learn.akka.messages.SetRequest;
-import com.lxq18.learn.akka.messages.Status;
+import messages.SetRequest;
+import messages.Status;
 
 import java.util.HashMap;
 import java.util.Map;

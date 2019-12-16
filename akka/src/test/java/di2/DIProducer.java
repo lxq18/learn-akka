@@ -1,4 +1,4 @@
-package com.lxq18.learn.akka.di2;
+package di2;
 
 import akka.actor.Actor;
 import akka.actor.IndirectActorProducer;

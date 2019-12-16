@@ -21,4 +21,8 @@ public class SpringExtension implements Extension {
     public Props props(String actorBeanName) {
         return Props.create(SpringActorProducer.class, applicationContext, actorBeanName);
     }
+
+    public Props props(String actorBeanName, Object... args) {
+        return Props.create(SpringActorProducer.class, applicationContext, actorBeanName, args);
+    }
 }

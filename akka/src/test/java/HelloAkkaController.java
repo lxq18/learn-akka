@@ -1,8 +1,7 @@
-package com.lxq18.learn.akka.controller;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
-import com.lxq18.learn.akka.di2.SpringExtProvider;
+import di2.SpringExtProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

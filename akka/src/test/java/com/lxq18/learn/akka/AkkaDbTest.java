@@ -3,7 +3,7 @@ package com.lxq18.learn.akka;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.testkit.TestActorRef;
-import com.lxq18.learn.akka.messages.SetRequest;
+import messages.SetRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 

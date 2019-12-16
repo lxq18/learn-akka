@@ -1,4 +1,4 @@
-package com.lxq18.learn.akka.messages;
+package messages;
 
 import lombok.AllArgsConstructor;
 

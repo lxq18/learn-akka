@@ -1,4 +1,4 @@
-package com.lxq18.learn.akka.di2;
+package di2;
 
 import akka.actor.ActorSystem;
 import org.springframework.beans.factory.annotation.Autowired;
